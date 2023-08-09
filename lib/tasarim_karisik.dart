@@ -7,7 +7,7 @@ class Karisik_Kullanimlar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.teal,
         title : Text("Tasarım"),
       ),
       body: Container(

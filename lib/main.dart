@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'tasarim_karisik.dart';
 import 'column_row_stack.dart';
+import 'wigdet_ozellestirme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -53,7 +54,15 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 ElevatedButton(onPressed: () { Navigator.push(
                     context, MaterialPageRoute(builder :  (context) => const Tasarim_Temelleri()));},
-                  child: Text("Column, Row, Stack"),
+                  child: const Text("Column, Row, Stack"),
+                )
+              ],
+            ),
+            Row(
+              children: [
+                ElevatedButton(onPressed: () { Navigator.push(
+                    context, MaterialPageRoute(builder :  (context) => const Widget_Ozellestirme()));},
+                  child: Text("Widget Özelleştirme"),
                 )
               ],
             ),
