@@ -13,7 +13,7 @@ class _Tasarim_TemelleriState extends State<Tasarim_Temelleri> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white60,
-        title: Text("Tasarım"),
+        title: Text("Widgetlar"),
       ),
       body: Stack(
         children: [

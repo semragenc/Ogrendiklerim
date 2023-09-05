@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:row_column_stack/center_align_sizedBox.dart';
 import 'tasarim_karisik.dart';
 import 'column_row_stack.dart';
 import 'wigdet_ozellestirme.dart';
@@ -72,6 +73,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 ElevatedButton(onPressed: () {Navigator.push(
                   context, MaterialPageRoute(builder: (context) => const Hizalama()));},
                     child: Text("Hizalama Denemeleri")),
+              ],
+            ),
+            Row(
+              children: [
+                ElevatedButton(onPressed: () { Navigator.push(
+                    context, MaterialPageRoute(builder :  (context) => const CenterAlignSizedbox()));},
+                  child: Text("Center, Align, SizedBox"),
+                )
               ],
             ),
           ],
