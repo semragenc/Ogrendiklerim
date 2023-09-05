@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'tasarim_karisik.dart';
 import 'column_row_stack.dart';
 import 'wigdet_ozellestirme.dart';
+import 'hizalama_islemleri.dart';
 
 void main() {
   runApp(const MyApp());
@@ -64,6 +65,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     context, MaterialPageRoute(builder :  (context) => const Widget_Ozellestirme()));},
                   child: Text("Widget Özelleştirme"),
                 )
+              ],
+            ),
+            Row(
+              children: [
+                ElevatedButton(onPressed: () {Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => const Hizalama()));},
+                    child: Text("Hizalama Denemeleri")),
               ],
             ),
           ],
