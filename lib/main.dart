@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:row_column_stack/center_align_sizedBox.dart';
+import 'package:row_column_stack/expanded.dart';
 import 'tasarim_karisik.dart';
 import 'column_row_stack.dart';
 import 'wigdet_ozellestirme.dart';
@@ -83,6 +84,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               ],
             ),
+            Row(
+              children: [
+                ElevatedButton(onPressed: () {Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => const Expanded_Deneme()));},
+                    child: Text("Deneme expanded"))
+              ],
+            )
           ],
         ),
       ),
