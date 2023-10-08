@@ -9,6 +9,7 @@ class Expanded_Deneme extends StatelessWidget {
     return Scaffold(
       appBar:  AppBar(
         title: Text("Beşiktaşlı"),
+        backgroundColor: Colors.lightGreen.shade900,
       ),
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,

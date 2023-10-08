@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:row_column_stack/center_align_sizedBox.dart';
 import 'package:row_column_stack/expanded.dart';
+import 'package:row_column_stack/ozelletirilmis_widget.dart';
+import 'package:row_column_stack/resim_ekleme.dart';
 import 'tasarim_karisik.dart';
 import 'column_row_stack.dart';
 import 'wigdet_ozellestirme.dart';
@@ -35,6 +37,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  // static var tik =  Icon(Icons.dark_mode, size: 1.8, color: Colors.green,);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +50,11 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Row(
               children: [
-                ElevatedButton(onPressed: () { Navigator.push(
+                ElevatedButton(onPressed: () {
+                  Future.delayed (Duration(seconds: 10), );
+                  // setState(() {
+                  // });
+                  Navigator.push(
                     context, MaterialPageRoute(builder :  (context) => const Karisik_Kullanimlar()));},
                     child: Text("Tasarım Karışık Kullanımı"),
                 )
@@ -65,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 ElevatedButton(onPressed: () { Navigator.push(
                     context, MaterialPageRoute(builder :  (context) => const Widget_Ozellestirme()));},
-                  child: Text("Widget Özelleştirme"),
+                  child: Text("Widget Özellikleri"),
                 )
               ],
             ),
@@ -90,7 +97,21 @@ class _MyHomePageState extends State<MyHomePage> {
                     context, MaterialPageRoute(builder: (context) => const Expanded_Deneme()));},
                     child: Text("Deneme expanded"))
               ],
-            )
+            ),
+            Row(
+              children: [
+                ElevatedButton(onPressed: () {Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Ozellestirme_Deneme()));},
+                    child: Text("Özelleştirme"))
+              ],
+            ),
+            Row(
+              children: [
+                ElevatedButton(onPressed: () {Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => ResimEkleme()));},
+                    child: Text("Resimler"))
+              ],
+            ),
           ],
         ),
       ),
