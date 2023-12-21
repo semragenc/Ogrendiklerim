@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:row_column_stack/center_align_sizedBox.dart';
 import 'package:row_column_stack/expanded.dart';
 import 'package:row_column_stack/ozelletirilmis_widget.dart';
-import 'package:row_column_stack/resim_ekleme.dart';
 import 'tasarim_karisik.dart';
 import 'column_row_stack.dart';
 import 'wigdet_ozellestirme.dart';
 import 'hizalama_islemleri.dart';
-
+import 'resim_ekleme.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -72,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 ElevatedButton(onPressed: () { Navigator.push(
                     context, MaterialPageRoute(builder :  (context) => const Widget_Ozellestirme()));},
-                  child: Text("Widget Özellikleri"),
+                  child: const Text("Widget Özellikleri"),
                 )
               ],
             ),
@@ -80,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 ElevatedButton(onPressed: () {Navigator.push(
                   context, MaterialPageRoute(builder: (context) => const Hizalama()));},
-                    child: Text("Hizalama Denemeleri")),
+                    child:  const Text("Hizalama Denemeleri")),
               ],
             ),
             Row(
@@ -109,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 ElevatedButton(onPressed: () {Navigator.push(
                     context, MaterialPageRoute(builder: (context) => ResimEkleme()));},
-                    child: Text("Resimler"))
+                    child: const Text("Resimler"))
               ],
             ),
           ],
